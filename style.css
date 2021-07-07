@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* display: flex; */
+    padding: 20px;
+    background-color: rgb(255, 250, 221);
+}
+
+/* ! Typography */
+header {
+    font-family: 'Playfair Display',serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: #353535;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+p, li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #454545;
+    line-height: 28px;
+    margin: 15px 0px;
+}
+
+code {
+    /* max-width: 450px; */
+    /* display: block; */
+    font-family: monospace;
+    font-size: 18px;
+    line-height: 2rem;
+    background-color: #454545;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* ! Typography */
+
+/* ! Navbar */
+#navbar {
+    padding: 20px;
+    /* position: fixed; */
+}
+
+#navbar header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0px;
+
+    text-align: center;
+}
+
+#navbar li {
+    border: 1px solid #454545;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#navbar a {
+    color: #454545;
+    text-decoration: none;
+}
+/* ! Navbar */
+
+/* ! Main Doc */
+#main-doc {
+    padding: 20px;
+    /* position: absolute;
+    left: 245px; */
+}
+
+#main-doc section {
+    margin-bottom: 60px;
+}
+
+#main-doc header {
+    margin-bottom: 16px;
+}
+/* ! Main Doc */
+
+.source-here {
+    text-align: center;
+}
+
+.source-here a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #454545;
+    border: 1px solid #454545;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.source-here a:hover {
+    color: #ffffff;
+    background-color: #454545;
+    border: 1px solid #454545;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        display: flex;
+    }
+
+    #navbar {
+        position: fixed;
+        padding: 20px;
+        border: 1px solid #454545;
+        border-radius: 5px;
+    }
+
+    #main-doc {
+        padding: 20px;
+        position: absolute;
+        left: 245px;
+        padding: 0px 45px;
+    }
+}
